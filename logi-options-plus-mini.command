@@ -60,7 +60,7 @@ mv ~/Library/Application\ Support/LogiOptionsPlus_bak ~/Library/Application\ Sup
 # Change the following arguments to 'Yes' if you want to install the module.
 # disable analytics、flow、sso、update、dfu、logivoice、aipromptbuilder、device-recommendation
 echo "$(date) | Installing $appname..."
-sudo $install_command --analytics No --flow No --sso No --update No --dfu No --logivoice No --aipromptbuilder No --device-recommendation No >> /dev/null 2>&1
+sudo $install_command --analytics No --flow Yes --sso No --update No --dfu Yes --logivoice No --aipromptbuilder No --device-recommendation No >> /dev/null 2>&1
 popd
 
 if [ "$?" = "0" ]; then
